@@ -1,0 +1,27 @@
+# FOURJS_START_COPYRIGHT(U,2016)
+# Property of Four Js*
+# (c) Copyright Four Js 2016, 2021. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these samples are
+# accurate and suitable for your purposes.
+# Their inclusion is purely for information purposes only.
+# FOURJS_END_COPYRIGHT
+
+SCHEMA custdemo
+ LAYOUT
+  GRID 
+  {
+   Store #:[a0  ]
+      Name:[a1                 ]
+     State:[a5      ]
+  }
+  END -- GRID
+ END
+ TABLES customer
+ ATTRIBUTES
+   EDIT a0=customer.store_num; 
+   EDIT a1=customer.store_name;
+  COMBOBOX a5=customer.state;
+ END

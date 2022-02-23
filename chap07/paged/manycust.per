@@ -1,0 +1,51 @@
+# FOURJS_START_COPYRIGHT(U,2002)
+# Property of Four Js*
+# (c) Copyright Four Js 2002, 2021. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these samples are
+# accurate and suitable for your purposes.
+# Their inclusion is purely for information purposes only.
+# FOURJS_END_COPYRIGHT
+
+SCHEMA custdemo
+
+LAYOUT
+ TABLE
+ {
+  Id   Name                   City             State  Zipcode       Contact          Phone
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ [f01][f02                  ][f03            ][f04  ][f05         ][f06            ][f07         ]
+ }
+ END
+END
+
+TABLES 
+   customer
+END
+
+ATTRIBUTES
+EDIT f01=customer.store_num;
+EDIT f02=customer.store_name;
+EDIT f03=customer.city;
+EDIT f04=customer.state;
+EDIT f05=customer.zipcode;
+EDIT f06=customer.contact_name;
+EDIT f07=customer.phone;
+END
+
+INSTRUCTIONS
+
+SCREEN RECORD sa_cust (store_num,
+                       store_name,
+                       city,
+                       state,
+                       zipcode,
+                       contact_name,
+                       phone);
+END

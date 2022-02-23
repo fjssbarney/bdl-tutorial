@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968"?>
+<!--
+ FOURJS_START_COPYRIGHT(U,2016)
+ Property of Four Js*
+ (c) Copyright Four Js 2016, 2021. All Rights Reserved.
+ * Trademark of Four Js Development Tools Europe Ltd
+   in the United States and elsewhere
+ 
+ Four Js and its suppliers do not warrant or guarantee that these samples are
+ accurate and suitable for your purposes.
+ Their inclusion is purely for information purposes only.
+ FOURJS_END_COPYRIGHT
+ -->
+<StyleList>
+  <Style name="Window">
+     <StyleAttribute name="windowType" value="normal" />
+  </Style>
+  <Style name="Window.dialog">
+     <StyleAttribute name="windowType" value="modal" />
+  </Style>
+  <Style name="Window.naked">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="border" value="tool" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+  </Style>
+  <Style name="Window.main">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="startMenuPosition" value="menu" />
+  </Style>
+  <Style name="Window.bottombuttons">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="ringMenuPosition" value="bottom" />
+     <StyleAttribute name="actionPanelPosition" value="bottom" />
+  </Style>
+  <Style name=".mystyle" >
+     <StyleAttribute name="textColor" value="blue" />
+  </Style>
+</StyleList>

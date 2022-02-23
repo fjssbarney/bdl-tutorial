@@ -1,0 +1,46 @@
+# FOURJS_START_COPYRIGHT(U,2016)
+# Property of Four Js*
+# (c) Copyright Four Js 2016, 2021. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these samples are
+# accurate and suitable for your purposes.
+# Their inclusion is purely for information purposes only.
+# FOURJS_END_COPYRIGHT
+
+SCHEMA custdemo
+
+LAYOUT
+GRID
+{
+<g g1                                        >
+ Store name: [fc                      :fe   ]
+<                                            >
+<t t1                                        >
+  Id   Name                  City
+ [f01 |f02                  |f03            ]
+ [f01 |f02                  |f03            ]
+ [f01 |f02                  |f03            ]
+ [f01 |f02                  |f03            ]
+<                                            >
+}
+END
+END
+
+TABLES 
+   customer
+END
+
+ATTRIBUTES
+GROUP g1: TEXT="Filter";
+EDIT fc = customer.store_name;
+BUTTON fe: fetch, IMAGE="filter";
+EDIT f01=FORMONLY.s_num;
+EDIT f02=FORMONLY.s_name;
+EDIT f03=FORMONLY.s_city;
+END
+
+INSTRUCTIONS
+SCREEN RECORD sa_cust (FORMONLY.*);
+END

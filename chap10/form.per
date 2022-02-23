@@ -1,0 +1,39 @@
+# FOURJS_START_COPYRIGHT(U,2002)
+# Property of Four Js*
+# (c) Copyright Four Js 2002, 2021. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these samples are
+# accurate and suitable for your purposes.
+# Their inclusion is purely for information purposes only.
+# FOURJS_END_COPYRIGHT
+SCHEMA custdemo
+
+LAYOUT
+  GRID
+  {
+   [lab1      ] [f01  ]
+
+   [lab2      ] [f02                 ]
+
+   [lab3      ] [f03             ]
+
+  }
+  END   -- grid
+END  -- layout
+
+TABLES
+ customer
+END
+
+ATTRIBUTES
+LABEL lab1 : TEXT=%"customer.store_num";
+EDIT  f01  = customer.store_num,
+             COMMENT = %"customer.dealernummsg";
+LABEL lab2 : TEXT=%"customer.store_name";
+EDIT  f02  = customer.store_name;
+LABEL lab3 : TEXT=%"customer.city";
+EDIT  f03  = customer.city;
+END
+

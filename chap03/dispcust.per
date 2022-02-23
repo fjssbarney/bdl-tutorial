@@ -1,0 +1,41 @@
+# FOURJS_START_COPYRIGHT(U,2002)
+# Property of Four Js*
+# (c) Copyright Four Js 2002, 2021. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these samples are
+# accurate and suitable for your purposes.
+# Their inclusion is purely for information purposes only.
+# FOURJS_END_COPYRIGHT
+
+SCHEMA custdemo
+
+
+LAYOUT
+  GRID
+  {
+   Store #:[f01  ] Name:[f02                 ]
+   Address:[f03                 ]
+           [f04                 ]
+      City:[f05             ]State:[f6]Zip:[f07   ] 
+   Contact:[f08                           ]
+     Phone:[f09                ]       
+
+  }   
+  END   --grid
+END  -- layout
+
+TABLES customer
+
+ATTRIBUTES
+EDIT f01=customer.store_num;
+EDIT f02=customer.store_name;
+EDIT f03=customer.addr;
+EDIT f04=customer.addr2;
+EDIT f05=customer.city;
+EDIT f6=customer.state;
+EDIT f07=customer.zipcode;
+EDIT f08=customer.contact_name;
+f09=customer.phone;
+END
