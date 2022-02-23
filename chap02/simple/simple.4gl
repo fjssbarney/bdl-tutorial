@@ -15,10 +15,10 @@
 # - Calling a function
 
 MAIN
-    CALL sayIt()
- END MAIN
+  CALL sayIt()
+END MAIN
 
- FUNCTION sayIt()
-   DISPLAY "Hello, world!"
- END FUNCTION --sayIt
+FUNCTION sayIt()
+  DISPLAY "Hello, world!"
+END FUNCTION --sayIt
 
