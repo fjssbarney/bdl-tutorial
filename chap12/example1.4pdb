@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Binary name="example1"><File name="example1.4gl" path="example1.4gl" ts="1645645367983"><Function endLine="23" name="main" signature="()" startColumn="1" startLine="12" visibility="public"><Variable endLine="13" name="mywin" startColumn="9" startLine="13" type="ui.Window" visibility=""/></Function></File></Binary>

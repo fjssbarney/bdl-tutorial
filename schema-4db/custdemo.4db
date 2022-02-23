@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Schema gstVersion="40001" id="{4a102f44-fb63-4264-a82c-c6abfc9e099d}" version="4.0">
+<Schema gstVersion="40003" id="{4a102f44-fb63-4264-a82c-c6abfc9e099d}" version="4.0">
   <AGSettings version="1.1">
     <DynamicProperties version="4">
       <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
@@ -10,10 +10,12 @@
       <NodeInfo mimeType="db/column" properties="widget;label"/>
     </NodeInfos>
   </AGSettings>
-  <ExtractionSettings/>
+  <ExtractionSettings last="SQLite">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="SQLite"/>
+  </ExtractionSettings>
   <Table active="false" name="customer" status="U" uuid="db/table6">
     <Column fglLength="4" fglType="2" name="store_num" notNull="true" order="1" status="U" uuid="db/column8"/>
-    <Column fglLength="20" fglType="0" name="store_name" notNull="false" order="2" status="U" uuid="db/column10"/>
+    <Column fglLength="30" fglType="0" name="store_name" notNull="false" order="2" status="U" uuid="db/column10"/>
     <Column fglLength="20" fglType="0" name="addr" notNull="false" order="3" status="U" uuid="db/column12"/>
     <Column fglLength="20" fglType="0" name="addr2" notNull="false" order="4" status="U" uuid="db/column14"/>
     <Column fglLength="15" fglType="0" name="city" notNull="false" order="5" status="U" uuid="db/column16"/>
@@ -56,7 +58,7 @@
   <Views ActiveView="View-1" showLabels="true">
     <View Name="View-1">
       <Layout>
-        <![CDATA[AAAAAgAAABIAZABiAC8AdABhAGIAbABlADZAJ004HSCGHsBmAYEGLIvcP7Em6XjU/fcBAAAAFABkAGIALwB0AGEAYgBsAGUAMgA2QJrANCuUhWTAZjGBG73hTj+yLQ5WBBiXAQAAABQAZABiAC8AdABhAGIAbABlADQAMkCCLTTqnddqwEtXFN9olbg/q6XjU/fO3wEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADJAkfnNsuge60BRIUKCuIIDP7MzMzMzMzcBAAAAFABkAGIALwB0AGEAYgBsAGUANgAyQJH379+ylnDAZiGBG6nhTj+xqfvnbItHAQAAABQAZABiAC8AdABhAGIAbABlADUANkCCJ9+lQdd/wGYG1nDd4VA/sKPXCj1wpwE=]]>
+        <![CDATA[AAAAAgAAABQAZABiAC8AdABhAGIAbABlADIANkB6ivyAAAAAQIKvd4AAAAA/si0OVgQYlwEAAAASAGQAYgAvAHQAYQBiAGwAZQA2QDNcKQAAAABAcEGZoAAAAD+xJul41P33AQAAABQAZABiAC8AdABhAGIAbABlADUANkBiQKPgAAAAQIKvd4AAAAA/sKPXCj1wpwEAAAAUAGQAYgAvAHQAYQBiAGwAZQA2ADJAcqBR4AAAAEBzHERAAAAAP7Gp++dsi0cBAAAAFABkAGIALwB0AGEAYgBsAGUANAAyQHKgUeAAAABAN/BMgAAAAD+rpeNT987fAQAAABQAZABiAC8AdABhAGIAbABlADMAMkAzXCkAAAAAQDRFogAAAAA/szMzMzMzNwE=]]>
       </Layout>
     </View>
   </Views>

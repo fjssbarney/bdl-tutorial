@@ -8,6 +8,12 @@
 # accurate and suitable for your purposes.
 # Their inclusion is purely for information purposes only.
 # FOURJS_END_COPYRIGHT
+
+# What you learn about: The minimum needed to run a Genero app.
+# - MAIN module
+# - FUNCTION 
+# - Calling a function
+
 MAIN
     CALL sayIt()
  END MAIN

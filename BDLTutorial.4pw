@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-1872589026" gstVersion="40001" version="3.4">
+<Project defaultApplication="-1872589026" gstVersion="40003" version="3.4">
   <Settings>
     <DynamicProperties version="4">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -67,8 +67,15 @@
   </Settings>
   <LanguageList version="1.0"/>
   <PlatformList version="1.0"/>
-  <Group id="106847312" label="Genero Demos" language="Genero" targetDirectory="$(ProjectDir)/.">
+  <Group id="106847312" label="Genero Demos" language="Genero (no link)" targetDirectory="$(ProjectDir)/.">
     <Group environment="filelist:FGLPROFILE=$(ProjectDir)/fglprofile;$(FGLPROFILE),dirlist:DBPATH=$(ProjectDir)/database-sqlite;$(DBPATH)" id="51911060" label="BDL_tutorial" targetDirectory="$(ProjectDir)">
+      <Group id="-57441123" label="chap01">
+        <Application binaryName="create_custdemo" id="-1579044983" label="create_custdemo">
+          <Configuration id="1980841535" label="Configuration"/>
+          <File filePath="database-sqlite/create_custdemo.4gl"/>
+          <File filePath="database-sqlite/custdemo.db"/>
+        </Application>
+      </Group>
       <Group id="752821248" label="chap02" targetDirectory="$(ProjectDir)/chap02">
         <Application binaryName="connectdb" dependencies="50" id="61011546" label="connectdb" targetDirectory="$(ProjectDir)/chap02/connectdb">
           <Configuration id="-1872589026" label="connectdb"/>
@@ -227,6 +234,9 @@
       </Group>
       <Library binaryName="Database" id="50" label="Database" targetDirectory="$(ProjectDir)/database">
         <File filePath="schema-4db/custdemo.4db"/>
+      </Library>
+      <Library binaryName="Resources" id="-1823023590" label="Resources">
+        <File filePath="fglprofile"/>
       </Library>
     </Group>
   </Group>
