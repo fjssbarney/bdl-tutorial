@@ -14,6 +14,8 @@
 # - FUNCTION 
 # - Calling a function
 
+#test comment
+
 MAIN
   CALL sayIt()
 END MAIN
